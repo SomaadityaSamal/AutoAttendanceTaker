@@ -7,7 +7,7 @@ A local macOS screen monitor that saves QR evidence and submits the first availa
 Requires Node.js 22+ and Google Chrome (both are installed on this Mac).
 
 ```sh
-cd '/Users/soma/Desktop/personal projects/AutomaticAttendanceTaker'
+cd '/Users/*name*/Desktop/personal projects/AutomaticAttendanceTaker'
 npm install
 npm run login
 npm start
