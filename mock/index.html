@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Attendance | Local Mock</title><link rel="stylesheet" href="/style.css"><script type="module" src="/app.js"></script></head>
+<body>
+  <header><a class="brand" href="/">Attendance <span>Local mock</span></a><span id="connection" role="status">Connecting</span></header>
+  <div id="presenter" hidden>
+    <div class="toolbar"><h1>Classroom Attendance</h1><button id="new-poll">New poll</button></div>
+    <div class="workspace">
+      <section class="join"><h2>Join by QR</h2><img id="qr" alt="Attendance poll QR code" width="360" height="360"><a id="participant-link" target="_blank" rel="noopener">Open response page</a><p class="muted" id="poll-id"></p></section>
+      <section class="results"><div class="section-title"><h2>Responses</h2><span id="poll-state" class="badge">Open</span></div><div class="total"><strong id="count">0</strong><span>participants</span></div><div class="answer-label"><span>Yes</span><span id="percentage">0%</span></div><div class="bar-track"><div id="bar"></div></div><div class="settings"><label><input id="poll-open" type="checkbox" checked> Poll open</label><label><input id="name-prompt" type="checkbox"> Screen-name popup</label></div></section>
+    </div>
+  </div>
+  <main id="participant" hidden>
+    <div class="participant-top"><span class="badge">Local mock</span><button id="profile" class="profile">Responding as Test Participant</button></div>
+    <p class="eyebrow">Attendance</p><h1>Classroom Attendance</h1>
+    <section id="waiting" hidden><h2>Waiting for the presentation</h2><p>The poll is paused.</p></section>
+    <section id="answer" hidden><button id="yes">Yes</button></section>
+    <section id="confirmation" role="status" hidden><div class="success-mark" aria-hidden="true">&#10003;</div><h2>Response recorded</h2><p>Your answer: <strong>Yes</strong></p></section>
+  </main>
+  <p id="error" role="alert" hidden></p>
+  <dialog id="name-dialog" aria-labelledby="name-title"><form id="name-form"><h2 id="name-title">Update your screen name</h2><p>Responding as</p><label for="screen-name">Name</label><input id="screen-name" type="text" maxlength="50" required><button type="submit">Update</button><button type="button" id="cancel-name" class="secondary">Cancel</button></form></dialog>
+</body></html>

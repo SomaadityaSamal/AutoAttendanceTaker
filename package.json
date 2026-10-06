@@ -1,0 +1,24 @@
+{
+  "name": "automatic-attendance-taker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node src/monitor.js",
+    "dry-run": "node src/monitor.js --dry-run",
+    "browser-dry-run": "node src/monitor.js --browser-dry-run",
+    "login": "node src/monitor.js --login",
+    "mock": "node mock/server.js",
+    "mock-monitor": "node src/monitor.js --mock-test",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "jsqr": "^1.4.0",
+    "playwright": "^1.55.0",
+    "pngjs": "^7.0.0",
+    "screenshot-desktop": "^1.15.0",
+    "sharp": "^0.35.4",
+    "qrcode": "^1.5.4"
+  }
+}

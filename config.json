@@ -1,0 +1,12 @@
+{
+  "scanIntervalMs": 3000,
+  "trustedDomains": ["pollev.com", "polleverywhere.com"],
+  "retryCooldownMs": 1800000,
+  "displayId": null,
+  "clickRule": "first-option",
+  "responseSelector": "",
+  "confirmationSelector": "",
+  "pageTimeoutMs": 30000,
+  "responseWaitMs": 120000,
+  "confirmationTimeoutMs": 10000
+}
